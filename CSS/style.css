@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --font-color: #ffffff;
+    --header-color: #020202b9;
+}
+
+
+body{
+    background-image: linear-gradient(to right, #0e0e0e5e, #1e1d2488, #222225b4), url(/img/black_hexagon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: var(--font-color);
+}
+
+header{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--header-color);
+}
+
+h3{
+    font-size: 1.5rem; 
+    font-family: 'Carter One', cursive;
+
+}
+
+.navegacion{
+margin-left: 1rem;
+}
+
+.container-li{ 
+    display: flex;
+    list-style: none;
+    justify-content: space-between  ;
+    align-items: center;
+}
+
+.li-principal{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 1.2rem;
+    width: 9rem;
+    padding: 1rem;
+    text-align: center;
+    border: solid rgb(0, 0, 0) 1px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+    padding: 3rem 15rem;
+    font-family: 'Carter One', cursive;
+    font-size: 3.5rem;
+}
+
+.Principal-title{
+    padding: 0.1px;
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+/*Modifica el tamaño del logo si se abre una opcion*/
+.transition-logo{
+    margin: 1rem;
+    padding: 5rem 3rem ;
+    width: 50vw;
+    font-size: 2rem;
+    transition: width 2s, padding 2s, font-size 2s, margin 2s ;
+}
+
+.Principal-subtitle{
+    font-family: 'Carter One', cursive;
+    font-size: 1.2rem;
+}
+
+
+/*==============================================
+Feedback de las opciones en la barra de navegacion*/
+.li-principal:hover{
+    background: rgb(255, 255, 255);
+    color: #000;      
+}
+
+.li-principal:active:hover{
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.li-press{
+    background: rgb(255, 255, 255);
+    color: #000;
+}
+/*=============================================*/
+
